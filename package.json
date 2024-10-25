@@ -1,0 +1,37 @@
+{
+  "name": "react-markdown-dom",
+  "description": "A React component that renders Markdown as HTML.",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sercrac07/react-markdown-dom.git"
+  },
+  "scripts": {
+    "build": "tsup"
+  },
+  "keywords": [
+    "react",
+    "markdown",
+    "dom"
+  ],
+  "author": "sercrac07",
+  "license": "MIT",
+  "dependencies": {
+    "@ast-exp/markdown": "^0.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tsup": "^8.3.4",
+    "typescript": "^5.6.3"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}

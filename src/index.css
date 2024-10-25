@@ -1,0 +1,175 @@
+.markdown-dom.light-theme {
+  --text-color: #333;
+  --bold-color: #1e90ff;
+  --background-color: #f9f9f9;
+  --code-background: #2d2d2d;
+  --code-color: #f8f8f2;
+  --blockquote-bg: #f0f8ff;
+
+  --table-header-bg: #f1f1f1;
+  --table-border-color: #ddd;
+}
+
+.markdown-dom.dark-theme {
+  --text-color: #f9f9f9;
+  --bold-color: #90caf9;
+  --background-color: #1e1e1e;
+  --code-background: #2c2c2c;
+  --code-color: #f8f8f2;
+  --blockquote-bg: #2e2e2e;
+
+  --table-header-bg: #333;
+  --table-border-color: #555;
+}
+
+.markdown-dom {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.8;
+  color: var(--text-color);
+  background: var(--background-color);
+  padding: 20px;
+}
+
+/* Heading styles */
+.markdown-dom h1,
+.markdown-dom h2,
+.markdown-dom h3,
+.markdown-dom h4,
+.markdown-dom h5,
+.markdown-dom h6 {
+  font-weight: 700;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  color: var(--bold-color);
+}
+
+/* Table styles */
+.markdown-dom table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.markdown-dom th,
+.markdown-dom td {
+  border: 1px solid var(--table-border-color);
+  padding: 12px;
+  text-align: left;
+}
+
+.markdown-dom th {
+  background-color: var(--table-header-bg);
+  font-weight: bold;
+}
+
+/* Heading sizes */
+.markdown-dom h1 {
+  font-size: 2.2em;
+  border-bottom: 3px solid var(--bold-color);
+}
+
+.markdown-dom h2 {
+  font-size: 1.9em;
+  border-bottom: 2px solid var(--bold-color);
+}
+
+.markdown-dom h3 {
+  font-size: 1.6em;
+}
+
+.markdown-dom h4 {
+  font-size: 1.4em;
+}
+
+.markdown-dom h5 {
+  font-size: 1.2em;
+}
+
+.markdown-dom h6 {
+  font-size: 1em;
+  color: #555;
+}
+
+/* Paragraph styles */
+.markdown-dom p {
+  margin: 12px 0;
+}
+
+/* Strong and Emphasis styles */
+.markdown-dom strong {
+  color: var(--bold-color);
+  font-weight: bold;
+}
+
+.markdown-dom em {
+  font-style: italic;
+  color: var(--bold-color); /* Adapted for dark mode */
+}
+
+/* List styles */
+.markdown-dom ul li,
+.markdown-dom ol li {
+  margin-bottom: 12px;
+  padding-left: 8px;
+}
+
+/* Pre and Code styles */
+.markdown-dom pre {
+  background-color: var(--code-background);
+  color: var(--code-color);
+  padding: 16px;
+  border-radius: 8px;
+  overflow-x: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.markdown-dom code {
+  background-color: #444;
+  color: var(--code-color);
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+/* Blockquote styles */
+.markdown-dom blockquote {
+  margin: 24px 0;
+  padding: 16px 24px;
+  background-color: var(--blockquote-bg);
+  border-left: 5px solid var(--bold-color);
+  color: var(--text-color); /* Adapted for dark mode */
+}
+
+/* Link styles */
+.markdown-dom a {
+  color: var(--bold-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.markdown-dom a:hover {
+  text-decoration: underline;
+  color: #1c78d4;
+}
+
+/* Image styles */
+.markdown-dom img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px 0;
+  border-radius: 6px;
+}
+
+/* Checkbox styles */
+.markdown-dom label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.markdown-dom input[type='checkbox'] {
+  accent-color: var(--bold-color);
+  width: 18px;
+  height: 18px;
+}
