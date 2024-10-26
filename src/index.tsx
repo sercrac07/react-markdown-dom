@@ -1,4 +1,4 @@
-import parser, { Inline, InlineType, Node, NodeType } from '@ast-exp/markdown'
+import { InlineNode, InlineNodeType, Node, NodeType, parser } from '@ast-exp/markdown'
 import './index.css'
 
 interface Props {
@@ -56,18 +56,18 @@ function handleNode(node: Node): React.ReactNode {
   }
 }
 
-function handleInline(inline: Inline) {
-  if (inline.type === InlineType.Text) {
+function handleInline(inline: InlineNode) {
+  if (inline.type === InlineNodeType.Text) {
     return inline.value
-  } else if (inline.type === InlineType.Code) {
+  } else if (inline.type === InlineNodeType.Code) {
     return <code>{inline.value}</code>
-  } else if (inline.type === InlineType.Link) {
+  } else if (inline.type === InlineNodeType.Link) {
     return <a href={inline.url}>{inline.children.map(handleInline)}</a>
-  } else if (inline.type === InlineType.Image) {
+  } else if (inline.type === InlineNodeType.Image) {
     return <img src={inline.url} alt={inline.alt} />
-  } else if (inline.type === InlineType.Emphasis) {
+  } else if (inline.type === InlineNodeType.Emphasis) {
     return <em>{inline.children.map(handleInline)}</em>
-  } else if (inline.type === InlineType.Strong) {
+  } else if (inline.type === InlineNodeType.Strong) {
     return <strong>{inline.children.map(handleInline)}</strong>
   }
 }

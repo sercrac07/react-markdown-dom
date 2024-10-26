@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@ast-exp/markdown':
-        specifier: ^0.0.1
-        version: 0.0.1
+        specifier: ^0.0.3
+        version: 0.0.3
     devDependencies:
       '@types/react':
         specifier: ^18.3.12
@@ -26,15 +26,15 @@ importers:
         version: 18.3.1(react@18.3.1)
       tsup:
         specifier: ^8.3.4
-        version: 8.3.4(typescript@5.6.3)
+        version: 8.3.5(typescript@5.6.3)
       typescript:
         specifier: ^5.6.3
         version: 5.6.3
 
 packages:
 
-  '@ast-exp/markdown@0.0.1':
-    resolution: {integrity: sha512-eemlsq5Iy2Ua9drKJ4cn/P8427T6zSKxhVnPTlShX22MOWESi8ecNUsqSJD/9GdFbfVnRtm3rRt6lNguDvHz8A==}
+  '@ast-exp/markdown@0.0.3':
+    resolution: {integrity: sha512-tl9mr5+11qlpHdDs/5VSwzDqxsIczi+0Wxp8N124BCOM1u8H9E3h0oV9Qna25QKZuB91xK5UAXf59K/7IpHKSQ==}
 
   '@esbuild/aix-ppc64@0.24.0':
     resolution: {integrity: sha512-WtKdFM7ls47zkKHFVzMz8opM7LkcsIp9amDUBIAWirg70RM71WRSjdILPsY5Uv1D42ZpUfaPILDlfactHgsRkw==}
@@ -201,9 +201,6 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
-
-  '@lexer-exp/markdown@0.0.1':
-    resolution: {integrity: sha512-knBEcUNxeWTuQu775Z5Lv/Z+a+f4cyLCNadrkBJ5G0DC5rtZvedG8WCP+xQy4DIuIL0y5OtETz6BxmOfikUTJg==}
 
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
@@ -592,8 +589,8 @@ packages:
   ts-interface-checker@0.1.13:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
 
-  tsup@8.3.4:
-    resolution: {integrity: sha512-0uCsxLADTFwGsEfSMx5fBFtXNw1mZJBAU6ZJe6xMeGfLT6o/12JDigvBIrQJEZlK01YBsocRxU3i+YY6QduShQ==}
+  tsup@8.3.5:
+    resolution: {integrity: sha512-Tunf6r6m6tnZsG9GYWndg0z8dEV7fD733VBFzFJ5Vcm1FtlXB8xBD/rtrBi2a3YKEV7hHtxiZtW5EAVADoe1pA==}
     engines: {node: '>=18'}
     hasBin: true
     peerDependencies:
@@ -637,9 +634,7 @@ packages:
 
 snapshots:
 
-  '@ast-exp/markdown@0.0.1':
-    dependencies:
-      '@lexer-exp/markdown': 0.0.1
+  '@ast-exp/markdown@0.0.3': {}
 
   '@esbuild/aix-ppc64@0.24.0':
     optional: true
@@ -738,8 +733,6 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
-
-  '@lexer-exp/markdown@0.0.1': {}
 
   '@pkgjs/parseargs@0.11.0':
     optional: true
@@ -1080,7 +1073,7 @@ snapshots:
 
   ts-interface-checker@0.1.13: {}
 
-  tsup@8.3.4(typescript@5.6.3):
+  tsup@8.3.5(typescript@5.6.3):
     dependencies:
       bundle-require: 5.0.0(esbuild@0.24.0)
       cac: 6.7.14
